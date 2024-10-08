@@ -1,11 +1,8 @@
-import { useState, useEffect } from "react"
-import UpdataArea from "../../components/updata";
-import { MyInfoProvider, useMyInfoContext } from "../../context/myInfoContext";
+
+import { MyInfoProvider } from "../../context/myInfoContext";
 import MyInfoTable from "../../components/MyInfoTable";
 
 export default function EmployeeInfo({employee}) {
-
-
     return(
         <>
             <MyInfoProvider employee={employee}>

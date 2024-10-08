@@ -2,7 +2,7 @@ import { useMyInfoContext } from "../context/myInfoContext";
 import UpdataArea from "./updata";
 
 export default function Myinfotable() {
-    const {content, setContent, clickHandle} = useMyInfoContext();
+    const {content, clickHandle} = useMyInfoContext();
     return(
         <>
             <h2>社員情報詳細画面</h2>
