@@ -1,5 +1,4 @@
 // 新規社員登録画面
-"use client";
 import Form from "../../components/Form.js";
 import { RegisterProvider } from "../../context/registerContext.js";
 

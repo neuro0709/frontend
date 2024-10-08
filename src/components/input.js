@@ -1,4 +1,3 @@
-
 export default function InputArea ({title, content, setcontent}){
     return(
         <>

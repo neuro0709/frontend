@@ -1,7 +1,6 @@
 import InputArea from "./input.js"
 import { useRegisterContext } from "../context/registerContext.js"
 
-
 export default function Form() {
     const { lastName, setLastName, firstName, setFirstName, address, setAddress, tel, setTel, handleSubmit } = useRegisterContext();
 
