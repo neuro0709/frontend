@@ -24,3 +24,11 @@ a {
     background: black;
   }
 }
+
+table {
+  border: solid 1px #000;
+}
+
+td {
+  border: solid 1px #000;
+}
