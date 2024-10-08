@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import EmployeeTabel from "../../components/EmployeeTabel.js"
 import BasicButtons from '../../components/button.js';
-import { ListProvider, useListContext } from '../../context/listContext.js';
+import { ListProvider } from '../../context/listContext.js';
 
 export default function EmployeeList({ employee, message }) {
     return (
