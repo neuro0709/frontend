@@ -19,4 +19,4 @@ const tableColumns = [
   
 const paginationModel = { page: 0, pageSize: 10 };
 
-  export{ tableColumns,paginationModel } ;
+export{ tableColumns,paginationModel } ;
