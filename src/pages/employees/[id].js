@@ -13,7 +13,6 @@ export default function EmployeeInfo({employee}) {
     )
 }
 
-
 export async function getServerSideProps(context) {
     const { id } = context.params;
     // 現在のサーバーにアクセスしてる情報がcontextに含まれるので、http://localhost:3000/employees/12としたらidは12となる

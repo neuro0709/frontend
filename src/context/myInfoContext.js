@@ -9,6 +9,7 @@ const MyInfoProvider = ({children, employee}) => {
         firstName: employee.firstName,
         address: employee.address,
         tel: employee.tel,
+        position: employee.position
     });
 
     const clickHandle = (e) => {
