@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import BasicButtons from './button';
+import BasicButtons from './BasicButton';
 
 const tableColumns = [
     { field: 'id', headerName: 'ID', width: 70 },

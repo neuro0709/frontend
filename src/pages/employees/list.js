@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import EmployeeTabel from "../../components/EmployeeTabel.js"
-import BasicButtons from '../../components/button.js';
+import BasicButtons from '../../components/BasicButton.js';
 import { ListProvider } from '../../context/listContext.js';
 
 export default function EmployeeList({ employee, message }) {
@@ -22,7 +22,7 @@ export default function EmployeeList({ employee, message }) {
 
 export async function getServerSideProps() {
     try {
-        const response = await fetch(`http://localhost:4000/employees/`)
+        const response = await fetch(`http://localhost:4000/employees/list`)
         if(!response.ok){
             throw new Error("ネットワークエラー")
         }

@@ -1,6 +1,6 @@
 import React from "react"
 
-const UpdataArea = ({title, clickHandle, name, value}) => {
+const UpdataInput = ({title, clickHandle, name, value}) => {
     return(
     <tr>
         <td>{title}</td>
@@ -16,4 +16,4 @@ const UpdataArea = ({title, clickHandle, name, value}) => {
     )
 }
 
-export default UpdataArea
+export default UpdataInput
