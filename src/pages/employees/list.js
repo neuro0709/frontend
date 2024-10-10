@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import EmployeeTabel from "../../components/organisms/EmployeeTabel.js"
-import BasicButtons from '../../components/atoms/BasicButton.js';
+import BasicButtons from '../../components/atoms/PathButton.js';
 import { ListProvider } from '../../context/listContext.js';
 
 export default function EmployeeList({ employee, message }) {

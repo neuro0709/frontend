@@ -32,3 +32,15 @@ table {
 td {
   border: solid 1px #000;
 }
+
+.register{
+  width: 480px;
+
+  background-color: rgb(247, 247, 247);
+  padding: 50px;
+}
+.myinfo{
+  /* width: 680px; */
+
+  padding: 50px;
+}

@@ -4,9 +4,11 @@ import { RegisterProvider } from "../../context/registerContext.js";
 
 export default function Home() {
   return (
-    <RegisterProvider>
-        <h1>新しい個人情報を登録</h1>
-        <Form/>
-    </RegisterProvider>
+    <div className="register">
+      <RegisterProvider>
+          <h1>新しい個人情報を登録</h1>
+          <Form/>
+      </RegisterProvider>
+    </div>
   );
 }
