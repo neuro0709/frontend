@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import EmployeeTabel from "../../components/EmployeeTabel.js"
-import BasicButtons from '../../components/BasicButton.js';
+import EmployeeTabel from "../../components/organisms/EmployeeTabel.js"
+import BasicButtons from '../../components/atoms/BasicButton.js';
 import { ListProvider } from '../../context/listContext.js';
 
 export default function EmployeeList({ employee, message }) {
     return (
         <div>
-            <ListProvider>
+            <ListProvider employee={employee} message={message} >
                 <h1>個人情報一覧画面</h1>
                 <BasicButtons
                     component = {Link}
@@ -14,7 +14,7 @@ export default function EmployeeList({ employee, message }) {
                     content="新しい個人情報を登録"
                     >
                 </BasicButtons>
-                <EmployeeTabel employee={employee} message={message} />
+                <EmployeeTabel/>
             </ListProvider>
         </div>
     );

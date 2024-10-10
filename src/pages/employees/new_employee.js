@@ -1,5 +1,5 @@
 // 新規社員登録画面
-import Form from "../../components/Form.js";
+import Form from "../../components/organisms/Form.js";
 import { RegisterProvider } from "../../context/registerContext.js";
 
 export default function Home() {

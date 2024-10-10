@@ -1,6 +1,6 @@
 
 import { MyInfoProvider } from "../../context/myInfoContext";
-import MyInfoTable from "../../components/MyInfoTable";
+import MyInfoTable from "../../components/organisms/MyInfoTable";
 import { notFound } from "next/navigation";
 
 export default function EmployeeInfo({employee}) {
