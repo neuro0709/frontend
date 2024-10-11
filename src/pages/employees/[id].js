@@ -1,23 +1,27 @@
 
 import { MyInfoProvider } from "../../context/myInfoContext";
 import MyInfoTable from "../../components/organisms/MyInfoTable";
-import BasicButtons from "../../components/atoms/PathButton";
+import PathButtons from "../../components/atoms/PathButton";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+
 
 export default function EmployeeInfo({employee}) {
     return(
-        <div className="myinfo">
-            <h2>社員情報詳細画面</h2>
+        <>
             <MyInfoProvider employee={employee}>
-            <BasicButtons
-                    component = {Link}
-                    href={`./list`}
-                    content="戻る"
-                    />
-            <MyInfoTable/>                
+                <div className="header">
+                    <h1>社員情報詳細画面</h1>
+                    <PathButtons
+                        component = {Link}
+                        href={`./list`}
+                        content="戻る"
+                        />
+                </div>
+                <div className="myinfo">
+                    <MyInfoTable/>                
+                </div>
             </MyInfoProvider>
-        </div>
+        </>
     )
 }
 

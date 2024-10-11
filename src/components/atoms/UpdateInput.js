@@ -2,10 +2,10 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
-export default function UpdataInputMui({changeHandle, name, defaultValue}) {
+export default function UpdateInputMui({changeHandle, name, value}) {
     return (
     <Box
-        sx={{ '& .MuiTextField-root': { m: 1, width: '50ch' } }}
+        sx={{'& .MuiTextField-root': { m: 1, width: '50ch' } }}
         noValidate
         autoComplete="off"
         >
@@ -13,7 +13,7 @@ export default function UpdataInputMui({changeHandle, name, defaultValue}) {
             <TextField
             required
             id={`input-${name}`}
-            defaultValue={defaultValue}
+            value={value}
             name={name}
             onChange={changeHandle}
             size='small'

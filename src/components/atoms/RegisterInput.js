@@ -8,6 +8,8 @@ export default function RegisterInput ({title, content, setcontent}){
                     <label>
                         <input
                         type="text"
+                        key={content}
+                        name={content}
                         value={content}
                         onChange={(e) => setcontent(e.target.value)}
                         required

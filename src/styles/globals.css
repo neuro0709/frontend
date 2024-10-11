@@ -40,7 +40,9 @@ td {
   padding: 50px;
 }
 .myinfo{
-  /* width: 680px; */
+  width: 780px;
 
-  padding: 50px;
+  /* background-color: rgb(247, 247, 247); */
+  padding: 10px;
 }
+

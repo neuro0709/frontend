@@ -5,7 +5,7 @@ import { tableColumns,paginationModel } from "../atoms/TableColumns"
 import { useListContext } from '../../context/listContext';
 
 export default function DataTable() {
-    const {employees, message, loading} = useListContext();
+    const {employees, message} = useListContext();
 
     if(message){
       return <div>{message}</div>

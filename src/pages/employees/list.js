@@ -23,6 +23,7 @@ export default function EmployeeList({ employee, message }) {
 export async function getServerSideProps() {
     try {
         const response = await fetch(`http://localhost:4000/employees/list`)
+        
         if(!response.ok){
             throw new Error("ネットワークエラー")
         }
