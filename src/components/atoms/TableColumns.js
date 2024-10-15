@@ -8,6 +8,8 @@ const tableColumns = [
     { field: 'address', headerName: '住所', width: 250 },
     { field: 'tel', headerName: '電話番号', width: 100 },
     { field: "link", headerName: "詳細" , width: 80 , renderCell: (params) => (
+        // paramsはrow内のデータにアクセスすることができる。params.rowは現在のデータオブジェクトにアクセス可能
+        // params.row.idはデータオブジェクトのidにアクセスすることになる
         <BasicButtons
             component={Link}
             href={`/employees/${params.row.id}`}
