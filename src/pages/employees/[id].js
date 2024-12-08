@@ -6,6 +6,7 @@ import Link from "next/link";
 
 
 export default function EmployeeInfo({employee}) {
+    console.log(employee)
     return(
         <>
             <MyInfoProvider employee={employee}>

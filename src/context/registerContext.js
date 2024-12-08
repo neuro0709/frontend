@@ -3,17 +3,17 @@ import React, { createContext, useContext, useState } from 'react';
 const RegisterContext = createContext();
 
 const RegisterProvider = ({children}) => {
-    const [lastName, setLastName] = useState("")
-    const [firstName, setFirstName] = useState("")
-    const [address, setAddress] = useState("")
-    const [tel, setTel] = useState("")
+    const [employees_lastName, setLastName] = useState("")
+    const [employees_firstName, setFirstName] = useState("")
+    const [employees_address, setAddress] = useState("")
+    const [employees_tel, setTel] = useState("")
     const handleSubmit = async(event) => {
         event.preventDefault();
         // 登録ボタンが押された時にはhttp://localhost:4000/employees/myInfo_register/にリクエストを送信
         const response = await fetch(`http://localhost:4000/employees/myInfo_register`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ lastName, firstName, address, tel }),
+          body: JSON.stringify({ employees_lastName, employees_firstName, employees_address, employees_tel }),
           }
         )
         // 正常にリクエストが送信された時とされなかったときにalert機能がそれぞれ実行
@@ -28,7 +28,7 @@ const RegisterProvider = ({children}) => {
         }
       }
     return (
-        <RegisterContext.Provider value={{ lastName, setLastName, firstName, setFirstName, address, setAddress, tel, setTel, handleSubmit }}>
+        <RegisterContext.Provider value={{ employees_lastName, setLastName, employees_firstName, setFirstName, employees_address, setAddress, employees_tel, setTel, handleSubmit }}>
             {children}
         </RegisterContext.Provider>
     )

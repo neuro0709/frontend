@@ -1,9 +1,10 @@
 import Link from 'next/link';
-import EmployeeTabel from "../../components/organisms/EmployeeTabel.js"
+import EmployeeTable from "../../components/organisms/EmployeeTable.js"
 import BasicButtons from '../../components/atoms/PathButton.js';
 import { ListProvider } from '../../context/listContext.js';
 
 export default function EmployeeList({ employee, message }) {
+    console.log(employee)
     return (
         <div>
             <ListProvider employee={employee} message={message} >
@@ -14,7 +15,7 @@ export default function EmployeeList({ employee, message }) {
                     content="新しい個人情報を登録"
                     >
                 </BasicButtons>
-                <EmployeeTabel/>
+                <EmployeeTable/>
             </ListProvider>
         </div>
     );

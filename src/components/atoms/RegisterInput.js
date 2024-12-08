@@ -1,4 +1,4 @@
-export default function RegisterInput ({title, content, setcontent}){
+export default function RegisterInput ({title, content, setContent}){
     return(
         <>
         <tbody>
@@ -8,10 +8,10 @@ export default function RegisterInput ({title, content, setcontent}){
                     <label>
                         <input
                         type="text"
-                        key={content}
+                        key={title}
                         name={content}
                         value={content}
-                        onChange={(e) => setcontent(e.target.value)}
+                        onChange={(e) => setContent(e.target.value)}
                         required
                         />
                     </label>

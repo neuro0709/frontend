@@ -10,12 +10,12 @@ import SubmitButtons from "../atoms/SubmitButton";
 import MyInfoTblRows from "../atoms/MyInfoTblRow";
 
 
-export default function Myinfotable() {
+export default function MyInfoTable() {
     const {content, setContent, UpdateSubmitHandle} = useMyInfoContext();
     const changeHandle = (e) => {
         const {name, value} = e.target;
-        setContent((prevcontent) => ({
-            ...prevcontent, [name]: value
+        setContent((prevContent) => ({
+            ...prevContent, [name]: value
         }))
     }
     const rows = MyInfoTblRows(content, changeHandle)

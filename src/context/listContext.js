@@ -7,8 +7,8 @@ const ListProvider = ({ children, employee, message }) => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     useEffect(()=> {
-        if(employee){
-            setEmployees(employee)
+        if(employees){
+            setEmployees(employees)
         }
         setLoading(false)
     },[employees])
